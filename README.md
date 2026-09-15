@@ -90,8 +90,13 @@ Todos los pedidos han sido entregados correctamente.
 
 ▶️ Instrucciones para ejecutar el proyecto
 1. Clonar o descargar el repositorio desde GitHub
+   
 2.-Abrir el proyecto en IntelliJ IDEA.
+
 3. Seleccionar **Open** y abrir la carpeta del proyecto Semana5
+   
 4.  Ubicar la carpeta src.
+   
 5.-Abrir la clase:  Main.java
+
 6.-Ejecutar el método main() utilizando el botón Run ▶.
