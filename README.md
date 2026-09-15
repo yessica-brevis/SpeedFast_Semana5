@@ -53,35 +53,34 @@ Se aplican conceptos como:
 📦 Pedido
 La clase Pedido contiene los datos principales de cada pedido:
 
-id
-direccionEntrega
-estado
+* id
+* direccionEntrega
+* estado
 
 El pedido puede encontrarse en los estados:
 
-PENDIENTE
-EN_REPARTO
-ENTREGADO
-🔄 EstadoPedido
+* PENDIENTE
+* EN_REPARTO
+* ENTREGADO
+* 🔄 EstadoPedido
 
 El enum EstadoPedido permite controlar los estados de los pedidos de forma segura, evitando errores de escritura.
 
 🚚 ZonaDeCarga
 
-La clase ZonaDeCarga representa el recurso compartido al que acceden los repartidores.
+* La clase ZonaDeCarga representa el recurso compartido al que acceden los repartidores.
 
-Utiliza métodos synchronized para controlar el acceso concurrente y evitar que un mismo pedido sea retirado por más de un repartidor.
+* Utiliza métodos synchronized para controlar el acceso concurrente y evitar que un mismo pedido sea retirado por más de un repartidor.
 
 👷 Repartidor
 
 La clase Repartidor implementa Runnable.
 
 Cada repartidor:
-
-Retira un pedido de la zona de carga.
-Cambia su estado a EN_REPARTO.
-Simula la entrega utilizando Thread.sleep().
-Cambia el estado a ENTREGADO.
+* Retira un pedido de la zona de carga.
+* Cambia su estado a EN_REPARTO.
+* Simula la entrega utilizando Thread.sleep().
+* Cambia el estado a ENTREGADO.
 ▶️ Ejecución
 
 La clase Main crea la zona de carga, agrega al menos 5 pedidos y ejecuta 3 repartidores utilizando ExecutorService.
